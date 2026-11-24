@@ -1,14 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f2027"/>
-      <stop offset="0.55" stop-color="#0e7490"/>
-      <stop offset="1" stop-color="#22d3ee"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06141b"/>
+      <stop offset="0.5" stop-color="#0b4a5c"/>
+      <stop offset="1" stop-color="#14b8c8"/>
     </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#a5f3fc"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" opacity="0.12"/>
+    </pattern>
   </defs>
-  <rect width="900" height="200" rx="14" fill="url(#g)"/>
-  <circle cx="800" cy="30" r="90" fill="#ffffff" opacity="0.07"/>
-  <circle cx="90" cy="190" r="70" fill="#ffffff" opacity="0.06"/>
-  <text x="450" y="95" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff">Gamal Emad</text>
-  <text x="450" y="140" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" fill="#e0f7fa">Flutter Developer  |  Mobile Apps  |  Clean Architecture</text>
+  <rect width="900" height="260" rx="18" fill="url(#bg)"/>
+  <rect width="900" height="260" rx="18" fill="url(#dots)"/>
+  <circle cx="790" cy="40" r="130" fill="#67e8f9" opacity="0.14"/>
+  <circle cx="70" cy="250" r="100" fill="#ffffff" opacity="0.06"/>
+  <!-- glass phone -->
+  <g transform="translate(700 38) rotate(8 60 90)">
+    <rect width="120" height="184" rx="20" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.45" stroke-width="1.5"/>
+    <rect x="44" y="10" width="32" height="6" rx="3" fill="#ffffff" opacity="0.5"/>
+    <rect x="14" y="34" width="92" height="46" rx="10" fill="#ffffff" opacity="0.2"/>
+    <rect x="14" y="92" width="42" height="34" rx="9" fill="#ffffff" opacity="0.16"/>
+    <rect x="64" y="92" width="42" height="34" rx="9" fill="#ffffff" opacity="0.16"/>
+    <rect x="14" y="138" width="92" height="12" rx="6" fill="#ffffff" opacity="0.14"/>
+    <rect x="14" y="158" width="60" height="12" rx="6" fill="#ffffff" opacity="0.1"/>
+  </g>
+  <text x="70" y="128" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="72" font-weight="800" fill="url(#name)">Gamal Emad</text>
+  <rect x="72" y="150" width="70" height="5" rx="2.5" fill="#67e8f9"/>
+  <text x="70" y="198" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="500" fill="#e0f7fa" letter-spacing="1">Flutter Developer</text>
 </svg>
